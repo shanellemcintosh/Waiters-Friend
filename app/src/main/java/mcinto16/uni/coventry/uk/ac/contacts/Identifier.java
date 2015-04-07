@@ -6,7 +6,6 @@ package mcinto16.uni.coventry.uk.ac.contacts;
 public class Identifier {
 
     private String _table, _starter, _main, _dessert;
-    private String _sAmount, _mAmount, _dAmount;
 
     public Identifier (String table, String starter, String main, String dessert, String starterA, String mainA, String dessertA) {
 
@@ -14,9 +13,6 @@ public class Identifier {
         _starter = starter;
         _main = main;
         _dessert = dessert;
-        _sAmount = starterA;
-        _mAmount = mainA;
-        _dAmount = dessertA;
     }
 
 
@@ -33,12 +29,6 @@ public class Identifier {
     public String getDessert() {
         return _dessert;
     }
-
-    public String getStarterA() { return _sAmount;}
-
-    public String getMainA() {return _mAmount;}
-
-    public String getDessertA() {return _dAmount;}
 
 
 }

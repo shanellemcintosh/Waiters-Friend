@@ -95,8 +95,7 @@
                         android:id="@+id/txtStarter"
                         android:layout_marginTop="15dp"
                         android:hint="Starter"
-                        android:layout_gravity="center"
-                        android:text="Starter" />
+                        android:layout_gravity="center" />
 
                     <EditText
                         android:layout_width="fill_parent"

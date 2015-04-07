@@ -127,15 +127,6 @@ public class MainActivity extends ActionBarActivity {
             TextView dessert = (TextView) view.findViewById(R.id.oDessert);
             dessert.setText(currentIdentifier.getDessert());
 
-            TextView starterA = (TextView) view.findViewById(R.id.sAmount);
-            starterA.setText(currentIdentifier.getStarterA());
-
-            TextView mainA = (TextView) view.findViewById(R.id.mAmount);
-            mainA.setText(currentIdentifier.getMainA());
-
-            TextView dessertA = (TextView) view.findViewById(R.id.dAmount);
-            dessertA.setText(currentIdentifier.getDessertA());
-
             return view;
         }
     }
