@@ -7,7 +7,7 @@ public class Identifier {
 
     private String _table, _starter, _main, _dessert;
 
-    public Identifier (String table, String starter, String main, String dessert, String starterA, String mainA, String dessertA) {
+    public Identifier(String table, String starter, String main, String dessert) {
 
         _table = table;
         _starter = starter;

@@ -49,16 +49,6 @@
                         android:id="@+id/listView"
                         android:layout_gravity="center"/>
 
-                    <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="Order Total"
-                        android:id="@+id/oTotal"
-                        android:layout_gravity="center_horizontal|bottom"
-                        android:layout_marginTop="400dp"
-                        android:textStyle="bold" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -126,32 +116,6 @@
                         android:layout_marginTop="10dp"
                         android:onClick="save"/>
 
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"
-                        android:ems="10"
-                        android:id="@+id/sAmount"
-                        android:layout_marginTop="15dp"
-                        android:layout_gravity="right|top" />
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"
-                        android:ems="10"
-                        android:id="@+id/mAmount"
-                        android:layout_marginTop="15dp"
-                        android:layout_gravity="right" />
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"
-                        android:ems="10"
-                        android:id="@+id/dAmount"
-                        android:layout_marginTop="15dp"
-                        android:layout_gravity="right" />
                 </LinearLayout>
 
             </FrameLayout>

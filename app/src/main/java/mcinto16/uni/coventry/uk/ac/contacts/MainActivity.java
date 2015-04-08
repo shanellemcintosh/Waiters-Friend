@@ -1,10 +1,7 @@
 package mcinto16.uni.coventry.uk.ac.contacts;
 
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
@@ -14,13 +11,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,9 +35,6 @@ public class MainActivity extends ActionBarActivity {
         starterTxt = (EditText)findViewById(R.id.txtStarter);
         mainTxt = (EditText) findViewById(R.id.txtMain);
         dessertTxt = (EditText) findViewById(R.id.txtDessert);
-        amountS = (EditText) findViewById(R.id.sAmount);
-        amountM = (EditText) findViewById(R.id.mAmount);
-        amountD = (EditText) findViewById(R.id.dAmount);
         orderListView = (ListView) findViewById(R.id.listView);
 
         TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
@@ -64,7 +55,7 @@ public class MainActivity extends ActionBarActivity {
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addIdentifier(tableTxt.getText().toString(), starterTxt.getText().toString(), mainTxt.getText().toString(), dessertTxt.getText().toString(), amountS.getText().toString(), amountM.getText().toString(), amountD.toString());
+                addIdentifier(tableTxt.getText().toString(), starterTxt.getText().toString(), mainTxt.getText().toString(), dessertTxt.getText().toString());
                 populateList(); //Function called when button is clicked new order will be added to order list, then will populate the list.
                 Toast.makeText(getApplicationContext(),"table " + tableTxt.getText().toString() + " has been added to your orders!", Toast.LENGTH_SHORT).show();
             }
@@ -97,8 +88,8 @@ public class MainActivity extends ActionBarActivity {
         orderListView.setAdapter(adapter);
     }
 
-    private void addIdentifier(String table, String starter, String main, String dessert, String starterA, String mainA, String dessertA) {
-        Identifiers.add(new Identifier(table, starter, main, dessert, starterA, mainA, dessertA));
+    private void addIdentifier(String table, String starter, String main, String dessert) {
+        Identifiers.add(new Identifier(table, starter, main, dessert));
 
     }
 
